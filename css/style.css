@@ -1,0 +1,277 @@
+
+.body{
+    background-color: white;
+}
+
+.banner {
+    padding: 40px;
+    width: 1250px;
+    height: 60px;
+    text-align: center;
+}
+
+.logo-image {
+    width: 70px;
+    height: 60px;
+    float: left;
+}
+
+.heading-style {
+    float: left;
+    font-size: 30px;
+    color: rgb(235, 172, 46);
+    font-family: cursive;
+}
+
+.chicago{
+    float:right;
+    width: 350px;
+    height: 80px;
+
+}
+.navigation-container {
+    background-image: url('imagesI/background2.jpeg');
+    padding: 9px; 
+}
+
+.navigation {
+    display: flex; 
+    text-align: center;
+}
+
+.navigation ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0 auto; 
+    display: inline; 
+}
+
+.navigation li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+.navigation a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 25px; 
+    font-family: cursive;
+}
+
+.picture-container {
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+}
+.headeronepicture { 
+    width: 33%;
+    height: 210px
+}
+
+.headertwopicture { 
+    width: 33%;
+    height: 210px; 
+}
+
+.headerthreepicture { 
+    width: 33%;
+    height: 210px; 
+}
+
+.middle-container{
+    padding: 10px; 
+    padding-bottom: 20px;
+}
+
+.whoarewe{
+    display: block; 
+    margin: 0 auto;
+    height: 150px;
+    width: 550px;
+    
+}
+
+.aboutustext{
+    font-family: 'Lucida Sans';
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.914);
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.left-container {
+    float: left;
+    width: 25%; 
+    padding-left: 60px;
+
+}
+.events{
+    width: 350px;
+    height: 100px;
+
+}
+.navigationevents {
+    text-align: center;
+}
+
+.navigationevents ul {
+    padding: 0;
+    list-style: none;
+}
+
+.navigationevents ul li {
+    display: block;
+    margin-right: 10px; 
+}
+
+.nav-link img {
+    width: 120px; 
+    height: 120px; 
+    display: inline-block;
+    border-radius: 50%; 
+}
+
+
+.right-container {
+    background-image: url('imagesI/background.jpeg'); 
+    background-repeat: no-repeat;
+    width:65%;
+    float: right;
+    height: 730px;
+    border: 2px solid black;
+    padding-right: 50px;
+    padding-left: 5px;
+}
+
+.newsheading{
+    font-size: 45px;
+    font-family: Helvetica;
+    color: rgb(200, 117, 1);
+    padding-left: 50px;
+    text-align: center;
+     
+}
+
+.newscontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    padding-right:50px;
+}
+
+.newspictures {
+    width: 220px;
+    height: 220px;
+    padding-right: 15px;
+    padding-left: 80px;
+}
+
+.news p{
+    padding-left: 80px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner {
+        width: 100%; 
+        height: 60px; 
+        padding: 20px;
+        padding-bottom: 20px;
+    }
+
+    .logo-image {
+        width: 50px; 
+        height: auto; 
+        padding-bottom: 20px;
+    }
+
+    .heading-style {
+        font-size: 20px;
+    }
+
+    .chicago {
+        width: 200px;
+        height: 50px;
+        padding-right: 20px;
+    }
+
+    .navigation-container {
+        padding: 5px;
+    }
+
+    .navigation {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .navigation li {
+        margin: 10px 0; 
+    }
+
+    .picture-container {
+        height: auto; 
+    }
+
+    .headeronepicture,
+    .headertwopicture,
+    .headerthreepicture {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .whoarewe {
+        width: 90%; 
+        max-width: 400px; 
+        height: auto;
+    }
+
+    .aboutustext {
+        padding: 0 20px;
+        font-size: 15px;
+    }
+
+    .left-container {
+        width: 100%;
+        float: none; 
+        padding: 0; 
+        margin-bottom: 20px;
+    }
+
+    .right-container {
+        width: 100%; 
+        float: none; 
+        background-image: url('imagesI/background.jpeg'); 
+        background-repeat:repeat;
+        padding: 20px; 
+        height: 900px;
+    }
+    .newscontainer {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: wrap; 
+    }
+    .newsheading {
+        padding-left: 20px;
+        font-size: 30px;
+    }
+
+
+    .newspictures {
+        width: 100px; 
+        height: 100px;
+        padding-left: 60px;
+
+    }
+
+    .news p {
+        padding-left: 30px;
+        margin-bottom: 20px; 
+        font-size: 10px;
+    }
+}
